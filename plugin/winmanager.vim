@@ -14,9 +14,6 @@
 " ============================================================================
 
 " quit if the user doesnt want us or if we are already loaded.
-if exists(g:AutoOpenWinManager) 
-        autocmd VimEnter * nested call s:StartWindowsManager()|1wincmd w 
-	endif
 
 if exists("loaded_winmanager")
 	finish
